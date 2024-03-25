@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from "./topbar.module.css";
 function Topbar() {
   return (
@@ -8,10 +8,38 @@ function Topbar() {
       <nav className={classes.navigation}>
         <ul className={classes.lists}>
           <li className={classes.link}>Task1</li>
-          <Link to="/file">
-            <li className={classes.link}>Task2</li>
-          </Link>
-          <li className={classes.link}>Task3</li>
+          <li className={classes.link}>
+            <NavLink
+              to="/file"
+              style={({ isActive }) => {
+                return isActive
+                  ? {
+                      color: "red",
+                      backgroundColor: "white",
+                      padding: "10px 20px",
+                    }
+                  : { color: "white" };
+              }}
+            >
+              Task2
+            </NavLink>
+          </li>
+          <li className={classes.link}>
+            <NavLink
+              to="/"
+              style={({ isActive }) => {
+                return isActive
+                  ? {
+                      color: "red",
+                      backgroundColor: "white",
+                      padding: "10px 20px",
+                    }
+                  : { color: "white" };
+              }}
+            >
+              Task3
+            </NavLink>
+          </li>
           <li className={classes.link}>Task4</li>
           <li className={classes.link}>Task5</li>
         </ul>

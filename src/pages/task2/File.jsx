@@ -2,11 +2,11 @@ import { useState } from "react";
 import classes from "./file.module.css";
 
 function File({ file }) {
-  const [expand, setExpamd] = useState(false);
+  const [expand, setExpand] = useState(false);
 
   const clickHandler = (e) => {
     e.stopPropagation();
-    setExpamd(!expand);
+    setExpand(!expand);
   };
   return (
     <div className={classes.container}>
