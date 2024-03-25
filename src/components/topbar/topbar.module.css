@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: rgb(2, 99, 99);
+    padding: 0px 30px;
+    color: white;
+}
+.lists{
+    display: flex;
+    gap: 15px;
+}
+.link{
+    color: white;
+    cursor: pointer;
+}
