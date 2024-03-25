@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.square{
+    height: 500px;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.flexContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

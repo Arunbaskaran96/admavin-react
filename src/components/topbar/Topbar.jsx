@@ -24,6 +24,7 @@ function Topbar() {
               Task2
             </NavLink>
           </li>
+          <li className={classes.link}>Task3</li>
           <li className={classes.link}>
             <NavLink
               to="/"
@@ -37,11 +38,26 @@ function Topbar() {
                   : { color: "white" };
               }}
             >
-              Task3
+              Task4
             </NavLink>
           </li>
-          <li className={classes.link}>Task4</li>
-          <li className={classes.link}>Task5</li>
+
+          <li className={classes.link}>
+            <NavLink
+              to="/square"
+              style={({ isActive }) => {
+                return isActive
+                  ? {
+                      color: "red",
+                      backgroundColor: "white",
+                      padding: "10px 20px",
+                    }
+                  : { color: "white" };
+              }}
+            >
+              Task5
+            </NavLink>
+          </li>
         </ul>
         {/* <Link to="/elementtansfer">
           <p className={classes.link}>Task1</p>
