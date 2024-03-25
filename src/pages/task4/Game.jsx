@@ -3,7 +3,7 @@ import classes from "./game.module.css";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 function Game() {
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(60);
   const [correctBox, setCorrectBox] = useState(0);
   const [score, setScore] = useState(0);
   const [gameStart, setGameStart] = useState(false);

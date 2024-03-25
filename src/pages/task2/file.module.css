@@ -1,0 +1,21 @@
+.active{
+    background-color: green;
+}
+.child{
+    padding-left: 50px;
+    display: inline-block;
+    padding-top: 3px;
+}
+
+
+.parent{
+    display: inline-block;
+    font-size: 25px;
+}
+.fileContainer{
+    margin-left: 15px;
+}
+.root{
+    border-left: 1px solid grey;
+    padding-left: 5px;
+}

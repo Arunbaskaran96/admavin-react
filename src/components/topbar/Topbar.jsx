@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classes from "./topbar.module.css";
 function Topbar() {
   return (
@@ -7,7 +8,9 @@ function Topbar() {
       <nav className={classes.navigation}>
         <ul className={classes.lists}>
           <li className={classes.link}>Task1</li>
-          <li className={classes.link}>Task2</li>
+          <Link to="/file">
+            <li className={classes.link}>Task2</li>
+          </Link>
           <li className={classes.link}>Task3</li>
           <li className={classes.link}>Task4</li>
           <li className={classes.link}>Task5</li>
