@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<GameHome />} />
+          <Route path="/game" element={<GameHome />} />
           <Route path="/file" element={<FileHome />} />
           <Route path="/square" element={<Square />} />
-          <Route path="/infinitescroll" element={<InfiniteScroll />} />
+          <Route index element={<InfiniteScroll />} />
           <Route path="/elementtransfer" element={<Element />} />
         </Route>
       </Routes>

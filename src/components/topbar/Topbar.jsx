@@ -41,7 +41,7 @@ function Topbar() {
           </li>
           <li className={classes.link}>
             <NavLink
-              to="/infinitescroll"
+              to="/"
               style={({ isActive }) => {
                 return isActive
                   ? {
@@ -57,7 +57,7 @@ function Topbar() {
           </li>
           <li className={classes.link}>
             <NavLink
-              to="/"
+              to="/game"
               style={({ isActive }) => {
                 return isActive
                   ? {
@@ -89,21 +89,6 @@ function Topbar() {
             </NavLink>
           </li>
         </ul>
-        {/* <Link to="/elementtansfer">
-          <p className={classes.link}>Task1</p>
-        </Link>
-        <Link to="/infinitescroll">
-          <p className={classes.link}>Task2</p>
-        </Link>
-        <Link to="/file">
-          <p className={classes.link}>Task3</p>
-        </Link>
-        <Link to="/game">
-          <p className={classes.link}>Task4</p>
-        </Link>
-        <Link to="/square">
-          <p className={classes.link}>Task5</p>
-        </Link> */}
       </nav>
     </header>
   );
