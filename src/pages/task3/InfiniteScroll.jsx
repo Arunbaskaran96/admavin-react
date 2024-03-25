@@ -7,7 +7,7 @@ function InfiniteScroll() {
   const [data, setData] = useState([]);
   const [skip, setSkip] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
-  const [total, setTotal] = useState(null);
+  const [callApi, setCallApi] = useState(true);
 
   // handle scroll bar
   useEffect(() => {
@@ -25,7 +25,9 @@ function InfiniteScroll() {
 
   // call api
   useEffect(() => {
-    fetchProducts();
+    if (callApi) {
+      fetchProducts();
+    }
   }, [skip]);
 
   const fetchProducts = async () => {
@@ -34,11 +36,11 @@ function InfiniteScroll() {
       const response = await fetch(
         `https://dummyjson.com/products?skip=${skip}&limit=20`
       );
-      const { products: res, total: length } = await response.json();
-      setData([...data, ...res]);
-      if (total === null) {
-        setTotal(length);
+      const { products: res } = await response.json();
+      if (res.length === 0) {
+        setCallApi(false);
       }
+      setData([...data, ...res]);
     } catch (error) {
       console.log(error);
     } finally {
