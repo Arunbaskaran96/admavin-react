@@ -24,7 +24,22 @@ function Topbar() {
               Task2
             </NavLink>
           </li>
-          <li className={classes.link}>Task3</li>
+          <li className={classes.link}>
+            <NavLink
+              to="/infinitescroll"
+              style={({ isActive }) => {
+                return isActive
+                  ? {
+                      color: "red",
+                      backgroundColor: "white",
+                      padding: "10px 20px",
+                    }
+                  : { color: "white" };
+              }}
+            >
+              Task2
+            </NavLink>
+          </li>
           <li className={classes.link}>
             <NavLink
               to="/"

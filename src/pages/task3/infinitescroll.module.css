@@ -1,0 +1,33 @@
+.image{
+    height: 200px;
+    width: 250px;
+    object-fit: contain;
+}
+.lists{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.loading{
+    height: 150px;
+    width: 150px;
+}
+
+.list{
+    border: 1px solid black;
+}
+
+.container{
+    margin-top: 25px;
+}
