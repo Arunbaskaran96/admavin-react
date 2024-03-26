@@ -46,6 +46,31 @@ button{
     color: white;
 }
 
+.remove{
+    background-color: red;
+    color: white;
+}
+
 .heading{
     text-align: center;
+}
+
+.instructionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.instructionContainer h4{
+    text-align: center;
+}
+.instruction{
+    border: 1px solid black;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+.lists{
+    list-style-type: circle;
 }
